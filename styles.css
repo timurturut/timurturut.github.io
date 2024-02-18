@@ -1,0 +1,157 @@
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* font-family: 'Hack', monospace; */
+    
+    font-family: 'Montserrat', sans-serif;
+    
+
+    background-color: #EEF0F5;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh; /* vh stands for viewport height */
+
+}
+
+.upperUp{
+    display: flex;
+    color: black;
+    justify-content: center;
+
+}
+
+.upperDown{
+    display: flex;
+    flex-direction: row;
+}
+
+.upperUp h1{
+    font-size: 4em;
+
+}
+/* .upperLeft h1 {
+    display: flex;
+    font-size: 5em; /* Adjust the font size as needed */
+    /* background: linear-gradient(to right,  #350068, #FF6978);
+    background-clip: text; */
+    /* color: transparent; */
+    /* margin: 10px 10px 10px 10px; /* Remove default margin on h1 */
+    /* justify-content: center;
+    align-items: center;
+  } */ 
+.upperLeft h2{ 
+    margin-left: 20px;
+    font-size: 2em;
+}
+.upperLeft h3{
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: minmax(1.75vw,4em);
+}
+
+.upperRight h1{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logoText img{
+    object-fit: contain;
+    height: 10vh;
+    min-height: 50px;
+}
+
+.logoText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    gap: 5px;
+}
+
+.logoContainer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.upper{
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower{
+    flex: 2 0 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.upperLeft{
+    flex: 1 0 0;
+}
+.upperRight{
+    flex: 1;
+    margin-left: 40px;
+}
+
+.lowerText{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projects{
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right,  #914cd2, #FF6978);
+    border-image-slice: 1;
+    padding: 10px;
+    margin: 10px;
+    transition: height 0.3s;
+    border-radius: 25px;
+    overflow: hidden;
+
+
+}
+.card:hover {
+    height: 450px;
+}
+.card img{
+    flex: 2;
+    height: 250px;
+}
+
+.card .nameText{
+    flex: 1;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
