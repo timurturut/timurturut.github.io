@@ -167,7 +167,7 @@ h2{
     margin: 10px;
 
     /*Border Related*/
-    border: double 4px transparent;
+    /* border: double 4px transparent; */
     border-radius: 20px;
     background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, #914cd2,#FF6978);
     background-origin: border-box;
