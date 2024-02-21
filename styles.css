@@ -6,6 +6,13 @@ body{
     background-color: #EEF0F5;
 }
 
+.scrollContainer{
+    
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+      
+}
 
 .headerContainer{
     display: flex;
@@ -71,6 +78,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start; /* Define snap points */
+
 }
 
 .aboutMe img{
@@ -130,6 +139,8 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start; /* Define snap points */
+
 }
 
 .projects{
