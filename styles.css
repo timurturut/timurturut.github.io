@@ -6,10 +6,30 @@ body{
     background-color: #EEF0F5;
 }
 
-.logoTest{
-    background-color: red;
-    height: 30px;
-    width: 30px;
+
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 20px; */
+}
+
+.headerLogo img{
+    height: 40px;
+    width: 40px;
+}
+
+.headerLogo p{
+    margin: 0;
+    font-size: 12px;
 }
 
 .middleElements{
@@ -45,6 +65,24 @@ header{
 } */
 
 
+.aboutMe{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe img{
+    flex: 2;
+    max-height: 480px;
+
+}
+
+.aboutMe text{
+    flex: 1;
+
+}
 .logoText img{
     object-fit: contain;
     height: 10vh;
@@ -66,8 +104,10 @@ header{
 }
 
 .logoText img{
-    width: 65px;
-    height: 65px;
+    /* width: 65px;
+    height: 65px; */
+    width: 15vw;
+    height: 15vh;
 }
 
 .logoText span{
@@ -83,6 +123,14 @@ header{
     margin-top: 50px;
 }
 
+.skills{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .projects{
     flex: 9;
