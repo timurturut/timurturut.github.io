@@ -193,3 +193,11 @@ a{
 
 
   }
+
+  @media (min-width: 1920px) {
+    .main {
+        max-width: 1700px; /* or whatever maximum width you prefer */
+        margin: 0 auto; /* Centers the container */
+        padding: 0 1rem; /* Optional: adds some padding on both sides */
+    }
+}
