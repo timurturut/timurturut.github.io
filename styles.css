@@ -140,39 +140,63 @@ h2{
 .projects{
     flex: 9;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
     gap: 10vw;
     margin: 10px;
 
 }
 
-.card{
+
+
+.card {
+    background-color: white;
+    position: relative;
+    flex-grow: 1;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 250px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right,  #914cd2, #FF6978);
-    border-image-slice: 1;
+    min-height: 350px;
+    height: 40vw;
+    max-height: 450px;
+    width: 300px;
+    max-width: 400px;
     padding: 10px;
     margin: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    /*Border Related*/
+    border: double 4px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, #914cd2,#FF6978);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
     transition: transform 0.3s ease;
-    border-radius: 25px;
+}
+
+#specialColor{
+    background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, green,darkgray);
 
 }
 
 .card:hover {
     transform: scale(1.03);
 }
+
+
 .card img{
     flex: 2;
+    flex-shrink: 0;
     height: 190px;
-    width: 250px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .card .nameText{
     flex: 1;
+    flex-shrink: 0;
 }
 
 a{
@@ -180,15 +204,17 @@ a{
     text-decoration: none;
 }
 
+
 @media only screen and (max-width: 1000px) {
     .upperDown{
         flex-direction: column;
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 770px) {
     .projects{
         flex-direction: column;
+        align-items: center;
     }
 
 
