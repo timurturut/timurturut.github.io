@@ -9,6 +9,19 @@ body{
     background-color: #EEF0F5;
 }
 
+.upperLeft h3{
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 25px;
+}
+
 .main{
     display: flex;
     flex-direction: column;
@@ -29,10 +42,6 @@ body{
     flex-direction: row;
 }
 
-.upperUp h1{
-    font-size: 4em;
-
-}
 /* .upperLeft h1 {
     display: flex;
     font-size: 5em; /* Adjust the font size as needed */
@@ -45,7 +54,6 @@ body{
   } */ 
 .upperLeft h2{ 
     margin-left: 20px;
-    font-size: 2em;
 }
 .upperLeft h3{
     display: flex;
@@ -53,7 +61,6 @@ body{
     margin-right: 40px;
     margin-top: 50px;
     justify-content: center;
-    font-size: minmax(1.75vw,4em);
 }
 
 .upperRight h1{
@@ -75,6 +82,20 @@ body{
     width: fit-content;
     height: fit-content;
     gap: 5px;
+    transition: transform 0.3s ease;
+}
+
+.logoText:hover{
+    transform: scale(1.15);
+}
+
+.logoText img{
+    width: 65px;
+    height: 65px;
+}
+
+.logoText span{
+    font-size: 15px;
 }
 
 .logoContainer{
@@ -82,6 +103,8 @@ body{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 1fr 1fr;
     place-items: center;
+    margin-right: 40px;
+    margin-top: 50px;
 }
 
 .upper{
@@ -94,7 +117,7 @@ body{
     flex: 2 0 0;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 
@@ -120,30 +143,32 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10vw;
+    margin: 10px;
+
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 350px;
+    height: 300px;
+    width: 250px;
     border: 2px solid transparent;
     border-image: linear-gradient(to right,  #914cd2, #FF6978);
     border-image-slice: 1;
     padding: 10px;
     margin: 10px;
-    transition: height 0.3s;
+    transition: transform 0.3s ease;
     border-radius: 25px;
-    overflow: hidden;
-
 
 }
+
 .card:hover {
-    height: 450px;
+    transform: scale(1.03);
 }
 .card img{
     flex: 2;
-    height: 250px;
+    height: 190px;
+    width: 250px;
 }
 
 .card .nameText{
@@ -155,3 +180,16 @@ a{
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1000px) {
+    .upperDown{
+        flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .projects{
+        flex-direction: column;
+    }
+
+
+  }
