@@ -2,72 +2,48 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     /* font-family: 'Hack', monospace; */
-    
     font-family: 'Montserrat', sans-serif;
-    
-
     background-color: #EEF0F5;
 }
 
-.upperLeft h3{
-    font-size: 20px;
-    color: rgb(59, 59, 59);
+.logoTest{
+    background-color: red;
+    height: 30px;
+    width: 30px;
 }
 
-h1{
-    font-size: 45px;
-}
-
-h2{
-    font-size: 25px;
-}
-
-.main{
+.middleElements{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh; /* vh stands for viewport height */
-
-}
-
-.upperUp{
-    display: flex;
-    color: black;
     justify-content: center;
-
+    align-items: center;
 }
 
-.upperDown{
+.middleElements h2{
+    border-right: 2px solid black;
+    padding: 0 10px;
+}
+
+.middleElements h2:last-child{
+    border-right: none
+}
+
+
+header{
     display: flex;
     flex-direction: row;
-}
-
-/* .upperLeft h1 {
-    display: flex;
-    font-size: 5em; /* Adjust the font size as needed */
-    /* background: linear-gradient(to right,  #350068, #FF6978);
-    background-clip: text; */
-    /* color: transparent; */
-    /* margin: 10px 10px 10px 10px; /* Remove default margin on h1 */
-    /* justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 55px;
     align-items: center;
-  } */ 
-.upperLeft h2{ 
-    margin-left: 20px;
-}
-.upperLeft h3{
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 50px;
-    justify-content: center;
 }
 
-.upperRight h1{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-}
+/* header h2:first-child {
+    margin-right: auto;
+} */
+/* header h2:last-child {
+    margin-left: auto;
+} */
+
 
 .logoText img{
     object-fit: contain;
@@ -107,35 +83,6 @@ h2{
     margin-top: 50px;
 }
 
-.upper{
-    flex: 1 0 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.lower{
-    flex: 2 0 0;
-    display: flex;
-    flex-direction: column;
-    /* margin-top: 30px; */
-}
-
-
-.upperLeft{
-    flex: 1 0 0;
-}
-.upperRight{
-    flex: 1;
-    margin-left: 40px;
-}
-
-.lowerText{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .projects{
     flex: 9;
@@ -167,7 +114,7 @@ h2{
     margin: 10px;
 
     /*Border Related*/
-    /* border: double 4px transparent; */
+    border: double 4px transparent;
     border-radius: 20px;
     background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, #914cd2,#FF6978);
     background-origin: border-box;
