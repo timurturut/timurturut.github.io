@@ -65,8 +65,9 @@ body{
     height: 55px;
     align-items: center;
     position: sticky;
+    top: 0;
     border-bottom: 2px solid black;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .header h2{
@@ -83,7 +84,8 @@ body{
 
 .aboutMe{
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 57px); 
+    padding-top: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +150,8 @@ body{
 }
 
 .skills{
-    height: 100vh;
+    height: calc(100vh - 57px); 
+    padding-top: 57px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -171,7 +174,8 @@ body{
 .projects{
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 57px); 
+    padding-top: 57px;
     display: flex;
     justify-content: start;
     align-items: center;
