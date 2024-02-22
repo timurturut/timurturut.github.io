@@ -2,6 +2,8 @@
 body{
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     /* font-family: 'Hack', monospace; */
     font-family: 'Montserrat', sans-serif;
     background-color: #EEF0F5;
@@ -11,7 +13,7 @@ body{
     /* margin: 0px; */
     /* width: 100vw; */
     overflow-x: hidden;
-    height: 100vh;
+    height: calc(100vh - 57px); 
     overflow-y: scroll;
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
       
@@ -64,13 +66,16 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100vw; */
     height: 55px;
     align-items: center;
     position: sticky;
     top: 0;
     border-bottom: 2px solid black;
     z-index: 1000;
+    background-color: white ;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header h2{
@@ -88,7 +93,7 @@ body{
 .aboutMe{
     width: 100vw;
     height: calc(100vh - 57px); 
-    padding-top: 57px;
+    /* padding-top: 55px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +159,7 @@ body{
 
 .skills{
     height: calc(100vh - 57px); 
-    padding-top: 57px;
+    /* padding-top: 55px; */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -178,13 +183,12 @@ body{
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
     height: calc(100vh - 57px); 
-    padding-top: 57px;
+    /* padding-top: 55px; */
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 10vh;
-    margin: 10px;
     overflow: hidden;
 }
 
