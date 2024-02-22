@@ -116,8 +116,6 @@ body{
     flex: 2;
     max-width: 800px;
     padding: 10px 10px;
-
-
 }
 .logoText img{
     object-fit: contain;
@@ -297,6 +295,25 @@ a{
         width: 350px;
     }
 }
+
+@media (max-width: 500px) {
+    .aboutMe img{
+        flex-grow: 0;
+        flex-shrink: 0;
+        min-width: 150px;
+        width: 250px ;
+        min-height: 10px;
+        height: 250px;
+    }
+
+    .text{
+        font-weight: lighter;
+        font-size: smaller;
+    }
+
+
+}
+
 
 .menuLogo {
     display: none; /* Hide logo by default */
