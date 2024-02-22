@@ -140,8 +140,8 @@ body{
 .logoText img{
     /* width: 65px;
     height: 65px; */
-    width: 15vw;
-    height: 15vh;
+    width: 11vw;
+    height: 11vh;
 }
 
 .logoText span{
@@ -153,8 +153,7 @@ body{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 1fr 1fr;
     place-items: center;
-    /* margin-right: 40px; */
-    margin-top: 50px;
+    gap: 5px;
 }
 
 .skills{
@@ -166,7 +165,7 @@ body{
     justify-content: start;
     align-items: center;
     scroll-snap-align: start; /* Define snap points */
-    gap: 10vh;
+    gap: 15vh;
     overflow: hidden;
 
 }
@@ -176,6 +175,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 10px;
     max-width: 900px;
 }
 
@@ -209,8 +209,8 @@ body{
     flex-direction: column;
     
     min-height: 300px;
-    height: 10vh;
-    max-height: 450px;
+    height: 25vw;
+    max-height: 650px;
     
     width: 250px;
     max-width: 400px;
