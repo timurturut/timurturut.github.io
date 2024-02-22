@@ -92,7 +92,7 @@ body{
 
 .aboutMe{
     width: 100vw;
-    height: calc(100vh - 57px); 
+    min-height: calc(100vh - 57px); 
     /* padding-top: 55px; */
     display: flex;
     justify-content: center;
@@ -115,6 +115,8 @@ body{
 .text{
     flex: 2;
     max-width: 800px;
+    padding: 10px 10px;
+
 
 }
 .logoText img{
@@ -157,7 +159,7 @@ body{
 }
 
 .skills{
-    height: calc(100vh - 57px); 
+    min-height: calc(100vh - 57px); 
     /* padding-top: 55px; */
     width: 100vw;
     display: flex;
@@ -182,7 +184,7 @@ body{
 .projects{
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
-    height: calc(100vh - 57px); 
+    min-height: calc(100vh - 57px); 
     /* padding-top: 55px; */
     display: flex;
     justify-content: start;
@@ -284,6 +286,16 @@ a{
         height: 30px;
         width: 30px;
     }
+
+    .aboutMe{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutMe img{
+        min-width: 200px;
+        width: 350px;
+    }
 }
 
 .menuLogo {
@@ -296,4 +308,14 @@ a{
 
 .hamburger{
     display: none;
+}
+
+@media (max-width: 930px) {
+    .cardContainer{
+        flex-direction: column;
+    }
+    .projects{
+        gap: 2vh;
+    }
+    
 }
