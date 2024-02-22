@@ -1,3 +1,4 @@
+
 body{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -7,7 +8,9 @@ body{
 }
 
 .scrollContainer{
-    
+    /* margin: 0px; */
+    /* width: 100vw; */
+    overflow-x: hidden;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory; /* Enable scroll snapping */
@@ -250,7 +253,7 @@ a{
 }
 
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 
   }
 
@@ -260,4 +263,33 @@ a{
   }
 
   @media (min-width: 1920px) {
+} */
+
+
+
+@media (max-width: 750px) {
+    .middleElements {
+        display: none; /* Hide navigation options */
+    }
+    .menuLogo {
+        display: block !important; /* Show logo */
+        /* Style your logo */
+    }
+
+    .menuLogo img{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.menuLogo {
+    display: none; /* Hide logo by default */
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px; /* Larger font size */
+}
+
+.hamburger{
+    display: none;
 }
