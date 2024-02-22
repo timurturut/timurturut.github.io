@@ -2,102 +2,111 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     /* font-family: 'Hack', monospace; */
-    
     font-family: 'Montserrat', sans-serif;
-    
-
     background-color: #EEF0F5;
 }
 
-.upperLeft h3{
-    font-size: 20px;
-    color: rgb(59, 59, 59);
+.scrollContainer{
+    
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+      
 }
 
-h1{
-    font-size: 45px;
-}
 
-h2{
-    font-size: 25px;
-}
 
-.main{
+.headerContainer{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    /* margin-top: 20px; */
+}
+
+.headerLogo img{
+    height: 40px;
+    width: 40px;
+}
+
+.headerLogo p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.middleElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleElements h2{
+    border-right: 2px solid black;
+    padding: 0 10px;
+}
+
+.middleElements h2:last-child{
+    border-right: none
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    height: 100vh; /* vh stands for viewport height */
-
-}
-
-.placeHolder{
-    width: 134.98px;
-}
-
-.upperUp{
-    display: flex;
-    flex-direction: row;
-    color: black;
-    justify-content: center;
+    height: 55px;
     align-items: center;
+    position: sticky;
+    border-bottom: 2px solid black;
+    z-index: 1;
 }
 
-.upperUp h1{
-    margin-left: auto;
+.header h2{
+    font-size: 15px;
+}
+
+/* header h2:first-child {
     margin-right: auto;
-}
+} */
+/* header h2:last-child {
+    margin-left: auto;
+} */
 
-.socialLogos{
-    display: flex;
-    gap: 5px;
-    margin-right: 30px;
-   
-}
 
-.socials{
+.aboutMe{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    scroll-snap-align: start; /* Define snap points */
+    overflow: hidden;
 
-.socials img{
-    height: 50px;
-    width: 60px;
 }
-
-.upperDown{
-    display: flex;
-    flex-direction: row;
-}
-
-/* .upperLeft h1 {
-    display: flex;
-    font-size: 5em; /* Adjust the font size as needed */
-    /* background: linear-gradient(to right,  #350068, #FF6978);
-    background-clip: text; */
-    /* color: transparent; */
-    /* margin: 10px 10px 10px 10px; /* Remove default margin on h1 */
-    /* justify-content: center;
-    align-items: center;
-  } */ 
-.upperLeft h2{ 
-    margin-left: 20px;
-}
-.upperLeft h3{
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 50px;
-    justify-content: center;
-}
-
-.upperRight h1{
-    display: flex;
-    justify-content: center;
+.aboutMe img {
     flex: 1;
+    max-height: 480px;
+    max-width: 480px;
+    min-height: 375px;
+    height: auto;
+    min-width: 375px; /* Minimum width set to 375px */
+    width: 30vw; 
 }
 
+
+.text{
+    flex: 2;
+    max-width: 800px;
+
+}
 .logoText img{
     object-fit: contain;
     height: 10vh;
@@ -119,8 +128,10 @@ h2{
 }
 
 .logoText img{
-    width: 65px;
-    height: 65px;
+    /* width: 65px;
+    height: 65px; */
+    width: 15vw;
+    height: 15vh;
 }
 
 .logoText span{
@@ -136,46 +147,46 @@ h2{
     margin-top: 50px;
 }
 
-.upper{
-    flex: 1 0 0;
+.skills{
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-}
-
-.lower{
-    flex: 2 0 0;
-    display: flex;
-    flex-direction: column;
-    /* margin-top: 30px; */
-}
-
-
-.upperLeft{
-    flex: 1 0 0;
-}
-.upperRight{
-    flex: 1;
-    margin-left: 40px;
-}
-
-.lowerText{
-    flex: 1;
-    display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
+    scroll-snap-align: start; /* Define snap points */
+    gap: 10vh;
+    overflow: hidden;
 
+}
+
+.skillText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
 }
 
 .projects{
-    flex: 9;
+    scroll-snap-align: start; /* Define snap points */
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    gap: 10vw;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
     margin: 10px;
-
+    overflow: hidden;
 }
 
+.cardContainer{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
 .card {
@@ -185,8 +196,9 @@ h2{
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    
     min-height: 300px;
-    height: 20vw;
+    height: 10vh;
     max-height: 450px;
     
     width: 250px;
@@ -235,27 +247,13 @@ a{
 
 
 @media only screen and (max-width: 1000px) {
-    .upperDown{
-        flex-direction: column;
-    }
+
   }
 
   @media only screen and (max-width: 770px) {
-    .projects{
-        flex-direction: column;
-        align-items: center;
-    }
 
 
   }
 
   @media (min-width: 1920px) {
-    .main {
-        max-width: 1700px; /* or whatever maximum width you prefer */
-        margin: 0 auto; /* Centers the container */
-        padding: 0 1rem; /* Optional: adds some padding on both sides */
-    }
-    /* .socialLogos{
-        margin-right: 100px;
-    } */
 }
