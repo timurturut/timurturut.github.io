@@ -319,6 +319,31 @@ button:hover{
     
 }
 
+.contactMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactMe .images{
+    display: flex;
+    gap: 20px;
+}
+.contactMe img{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.socialLogoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 @media (max-width: 750px) {
