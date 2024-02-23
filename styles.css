@@ -284,7 +284,7 @@ a{
     gap: 10vh;
 }
 
-form{
+.form{
     display: flex;
     width: 50vw;
     height: 50vh;
@@ -297,13 +297,11 @@ input{
     padding: 12px 20px;
     border-radius: 15px;
     border: 2px solid gray;
-}
-
-form input{
     height: 30px;
+
 }
 
-form #msg{
+.form #msg{
     height: 100px;
 }
 
@@ -324,6 +322,7 @@ button{
     transition: transform 0.3s ease;
     margin-right: auto;
     margin-left: auto;
+    color: black;
 
 }
 
