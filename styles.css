@@ -268,7 +268,7 @@ a{
     min-height: calc(100vh - 57px); 
     justify-content: start;
     align-items: center;
-    gap: 10vh;
+    gap: 5vh;
 }
 
 form{
