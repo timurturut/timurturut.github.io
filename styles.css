@@ -189,7 +189,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 10vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .cardContainer{
