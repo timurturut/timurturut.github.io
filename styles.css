@@ -15,7 +15,7 @@ body{
     overflow-x: hidden;
     height: calc(100vh - 57px); 
     overflow-y: scroll;
-    scroll-snap-type: y mandatory; /* Enable scroll snapping */
+    scroll-snap-type: y proximity; /* Enable scroll snapping */
       
 }
 
@@ -69,7 +69,7 @@ body{
     /* width: 100vw; */
     height: 55px;
     align-items: center;
-    position: sticky;
+    position:sticky;
     top: 0;
     border-bottom: 2px solid black;
     z-index: 1000;
@@ -259,19 +259,6 @@ a{
     color: inherit;
     text-decoration: none;
 }
-
-
-/* @media only screen and (max-width: 1000px) {
-
-  }
-
-  @media only screen and (max-width: 770px) {
-
-
-  }
-
-  @media (min-width: 1920px) {
-} */
 
 .contact{
     display: flex;
