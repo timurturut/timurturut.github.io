@@ -395,6 +395,10 @@ button:hover{
         gap: 10px;
     }
 
+    html{
+        scroll-snap-type: none;
+    }
+
 
 }
 
