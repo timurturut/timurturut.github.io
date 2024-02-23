@@ -323,11 +323,12 @@ button{
     margin-right: auto;
     margin-left: auto;
     color: black;
+    cursor: pointer;
 
 }
 
 button:hover{
-    transform: scale(1.03);
+    transform: scale(1.10);
     
 }
 

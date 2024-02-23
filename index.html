@@ -128,14 +128,19 @@
                     <img src="" alt="">
                     <img src="" alt="">
                 </div>
-                <form action="">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a6a6c68a-64c0-4a00-96a8-5c62e078b5d8">
+                    
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    
                     <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail" placeholder="Your E-mail" required>
+                    <input type="email" name="email" id="mail" placeholder="Your E-mail" required>
+                    
                     <label for="msg">Message</label>
-                    <textarea name="" id="msg" name="msg" placeholder="Your Message" required></textarea>
-                    <button>Send</button>
+                    <textarea name="message" id="msg" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit">Send</button>
                 </form>
             </section>
         </div>
