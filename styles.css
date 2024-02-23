@@ -117,6 +117,10 @@ body{
     max-width: 800px;
     padding: 10px 10px;
 }
+
+.text h3{
+    font-weight: 500;
+}
 .logoText img{
     object-fit: contain;
     height: 10vh;
@@ -269,6 +273,65 @@ a{
   @media (min-width: 1920px) {
 } */
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start; /* Define snap points */
+    width: 100vw;
+    min-height: calc(100vh - 57px); 
+    justify-content: start;
+    align-items: center;
+    gap: 10vh;
+}
+
+form{
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    max-width: 700px;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+input{
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+
+form input{
+    height: 30px;
+}
+
+form #msg{
+    height: 100px;
+}
+
+textarea{
+    padding: 12px 20px;
+    border-radius: 15px;
+    border: 2px solid gray;
+    resize: none;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    max-width: 100px;
+    background-color: white;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+button:hover{
+    transform: scale(1.03);
+    
+}
+
 
 
 @media (max-width: 750px) {
@@ -307,7 +370,6 @@ a{
     }
 
     .text{
-        font-weight: lighter;
         font-size: smaller;
     }
 
