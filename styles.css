@@ -1,3 +1,6 @@
+html{
+    scroll-snap-type: y mandatory;
+}
 
 body{
     margin-top: 0px;
@@ -7,18 +10,9 @@ body{
     /* font-family: 'Hack', monospace; */
     font-family: 'Montserrat', sans-serif;
     background-color: #EEF0F5;
-}
-
-.scrollContainer{
-    /* margin: 0px; */
-    /* width: 100vw; */
     overflow-x: hidden;
-    height: calc(100vh - 57px); 
-    overflow-y: scroll;
-    scroll-snap-type: y proximity; /* Enable scroll snapping */
-      
-}
 
+}
 
 
 .headerContainer{
@@ -90,8 +84,8 @@ body{
 
 .aboutMe{
     width: 100vw;
-    min-height: calc(100vh - 57px); 
-    /* padding-top: 55px; */
+    height: calc(100vh - 57px); 
+    padding-top: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,8 +153,8 @@ body{
 }
 
 .skills{
-    min-height: calc(100vh - 57px); 
-    /* padding-top: 55px; */
+    height: calc(100vh - 57px); 
+    padding-top: 57px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -188,8 +182,8 @@ body{
 .projects{
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
-    min-height: calc(100vh - 57px); 
-    /* padding-top: 55px; */
+    height: calc(100vh - 57px); 
+    padding-top: 57px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -272,6 +266,7 @@ a{
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
     height: calc(100vh - 57px); 
+    padding-top: 57px;
     justify-content: start;
     align-items: center;
     gap: 5vh;
@@ -394,10 +389,6 @@ button:hover{
 
     .text{
         font-size: smaller;
-    }
-
-    .scrollContainer{
-        scroll-snap-type:none;
     }
 
     .contact{
