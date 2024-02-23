@@ -296,7 +296,7 @@ a{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 499px) {
     .aboutMe img{
         flex-grow: 0;
         flex-shrink: 0;
@@ -309,6 +309,10 @@ a{
     .text{
         font-weight: lighter;
         font-size: smaller;
+    }
+
+    .scrollContainer{
+        scroll-snap-type:none;
     }
 
 
