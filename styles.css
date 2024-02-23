@@ -389,6 +389,10 @@ button:hover{
         scroll-snap-type:none;
     }
 
+    .contact{
+        gap: 10px;
+    }
+
 
 }
 
