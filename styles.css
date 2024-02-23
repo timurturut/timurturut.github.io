@@ -271,7 +271,7 @@ a{
     flex-direction: column;
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
-    min-height: calc(100vh - 57px); 
+    height: calc(100vh - 57px); 
     justify-content: start;
     align-items: center;
     gap: 5vh;
@@ -396,9 +396,9 @@ button:hover{
         font-size: smaller;
     }
 
-    /* .scrollContainer{
+    .scrollContainer{
         scroll-snap-type:none;
-    } */
+    }
 
     .contact{
         gap: 10px;
