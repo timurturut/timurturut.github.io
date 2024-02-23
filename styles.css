@@ -80,14 +80,12 @@ body{
 
 .header h2{
     font-size: 15px;
+    font-weight: 500;
 }
 
-/* header h2:first-child {
-    margin-right: auto;
-} */
-/* header h2:last-child {
-    margin-left: auto;
-} */
+.header h1{
+    font-size: 20px;
+}
 
 
 .aboutMe{
@@ -183,6 +181,10 @@ body{
     max-width: 900px;
 }
 
+.skillText h3{
+    font-weight: 500;
+}
+
 .projects{
     scroll-snap-align: start; /* Define snap points */
     width: 100vw;
@@ -250,9 +252,13 @@ body{
     border-radius: 15px;
 }
 
-.card .nameText{
+.nameText{
     flex: 1;
     flex-shrink: 0;
+}
+
+.nameText h3{
+    font-weight: 500;
 }
 
 a{
@@ -288,6 +294,10 @@ input{
 
 }
 
+label{
+    font-weight: 900;
+}
+
 form #msg{
     height: 100px;
 }
@@ -311,6 +321,7 @@ button{
     margin-left: auto;
     color: black;
     cursor: pointer;
+    font-weight: 900;
 
 }
 
