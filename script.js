@@ -23,6 +23,7 @@ const middleElements = document.querySelector(".middleElements")
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active")
     middleElements.classList.toggle("active")
+
 })
 
 
