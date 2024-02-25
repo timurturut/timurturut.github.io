@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #d4d4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    font-weight: 500;
+}
+
+.sudokuContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    border: 4px solid black;
+}
+
+.cell{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #999;
+    transition: all 03.s ease-in-out;
+}
+
+table tr:nth-child(3n) td,
+table tr:nth-child(3n+3) td{
+    border-bottom: 2px solid black;
+}
+
+table td:nth-child(3n){
+    border-right: 2px solid black;
+}
+
+input{
+    outline: none;
+    color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.solved{
+    background-color: #9ccc65;
+    transition: all 0.2s ease-in-out;
+}
+
+.constant{
+    color: blue;
+}
+
