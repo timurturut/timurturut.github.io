@@ -1,8 +1,8 @@
-html{
+html {
     scroll-snap-type: y mandatory;
 }
 
-body{
+body {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -15,14 +15,14 @@ body{
 }
 
 
-.headerContainer{
+.headerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.headerLogo{
+.headerLogo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,99 +30,114 @@ body{
     /* margin-top: 20px; */
 }
 
-.headerLogo img{
+.headerLogo img {
     height: 40px;
     width: 40px;
 }
 
-.headerLogo p{
+.headerLogo p {
     margin: 0;
     font-size: 12px;
 }
 
-.middleElements{
+.middleElements {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.middleElements h2{
-    border-right: 2px solid black;
-    padding: 0 10px;
+.middleElements h2 {
+    /* border-right: 2px solid black; */
+    padding: 10px 10px;
+    margin: 6px;
+    border-radius: 20px;
 }
 
-.middleElements h2:hover{
-    font-weight: 600;
+.singleBar {
+    height: 15px;
+    width: 2px;
+    background-color: black;
 }
-.middleElements h2:last-child{
+
+
+.middleElements h2:hover {
+    /* font-weight: 600; */
+    background-color: rgb(239, 235, 235);
+}
+
+.middleElements h2:last-child {
     border-right: none
 }
 
 
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: calc(100vw - 20px);
     height: 55px;
     align-items: center;
-    position:fixed;
+    position: fixed;
     top: 0;
     border-bottom: 2px solid black;
     z-index: 1000;
-    background-color: white ;
+    background-color: white;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.header h2{
+.header h2 {
     font-size: 15px;
     font-weight: 500;
 }
 
-.header h1{
+.header h1 {
     font-size: 20px;
 }
 
 
-.aboutMe{
+.aboutMe {
     width: 100vw;
-    min-height: calc(100vh - 57px); 
+    min-height: calc(100vh - 57px);
     padding-top: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start; /* Define snap points */
+    scroll-snap-align: start;
+    /* Define snap points */
     overflow: hidden;
 
 }
+
 .aboutMe img {
     flex: 1;
     max-height: 480px;
     max-width: 480px;
     min-height: 375px;
     height: auto;
-    min-width: 375px; /* Minimum width set to 375px */
-    width: 30vw; 
+    min-width: 375px;
+    /* Minimum width set to 375px */
+    width: 30vw;
 }
 
 
-.text{
+.text {
     flex: 2;
     max-width: 800px;
     padding: 10px 10px;
 }
 
-.text h3{
+.text h3 {
     font-weight: 500;
 }
-.logoText img{
+
+.logoText img {
     object-fit: contain;
     height: 10vh;
     min-height: 50px;
 }
 
-.logoText{
+.logoText {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,44 +147,45 @@ body{
     transition: transform 0.3s ease;
 }
 
-.logoText:hover{
+.logoText:hover {
     transform: scale(1.15);
 }
 
-.logoText img{
+.logoText img {
     /* width: 65px;
     height: 65px; */
     width: 11vw;
     height: 11vh;
 }
 
-.logoText span{
+.logoText span {
     font-size: 15px;
 }
 
-.logoContainer{
+.logoContainer {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr;
     place-items: center;
     gap: 5px;
 }
 
-.skills{
-    min-height: calc(100vh - 57px); 
+.skills {
+    min-height: calc(100vh - 57px);
     padding-top: 57px;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    scroll-snap-align: start; /* Define snap points */
+    scroll-snap-align: start;
+    /* Define snap points */
     gap: 15vh;
     overflow: hidden;
 
 }
 
-.skillText{
+.skillText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,14 +194,15 @@ body{
     max-width: 900px;
 }
 
-.skillText h3{
+.skillText h3 {
     font-weight: 500;
 }
 
-.projects{
-    scroll-snap-align: start; /* Define snap points */
+.projects {
+    scroll-snap-align: start;
+    /* Define snap points */
     width: 100vw;
-    min-height: calc(100vh - 57px); 
+    min-height: calc(100vh - 57px);
     padding-top: 57px;
     display: flex;
     justify-content: start;
@@ -195,7 +212,7 @@ body{
     /* overflow: hidden; */
 }
 
-.cardContainer{
+.cardContainer {
     display: flex;
     width: 100vw;
     align-items: center;
@@ -210,29 +227,29 @@ body{
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    
+
     min-height: 300px;
     height: 25vw;
     max-height: 650px;
-    
+
     width: 250px;
     max-width: 400px;
-    
+
     padding: 10px;
     margin: 10px;
 
     /*Border Related*/
     border: double 4px transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, #914cd2,#FF6978);
+    background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, #914cd2, #FF6978);
     background-origin: border-box;
     background-clip: padding-box, border-box;
 
     transition: transform 0.3s ease;
 }
 
-#specialColor{
-    background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, green,darkgray);
+#specialColor {
+    background-image: linear-gradient(#EEF0F5, #EEF0F5), radial-gradient(circle at top left, green, darkgray);
 
 }
 
@@ -241,7 +258,7 @@ body{
 }
 
 
-.card img{
+.card img {
     flex: 2;
     flex-shrink: 0;
     height: 150px;
@@ -249,33 +266,34 @@ body{
     border-radius: 15px;
 }
 
-.nameText{
+.nameText {
     flex: 1;
     flex-shrink: 0;
 }
 
-.nameText h3{
+.nameText h3 {
     font-weight: 500;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
-    scroll-snap-align: start; /* Define snap points */
+    scroll-snap-align: start;
+    /* Define snap points */
     width: 100vw;
-    min-height: calc(100vh - 57px); 
+    min-height: calc(100vh - 57px);
     padding-top: 57px;
     justify-content: start;
     align-items: center;
     gap: 5vh;
 }
 
-form{
+form {
     display: flex;
     width: 50vw;
     height: 50vh;
@@ -284,7 +302,7 @@ form{
     gap: 2vh;
 }
 
-input{
+input {
     padding: 12px 20px;
     border-radius: 15px;
     border: 2px solid gray;
@@ -292,22 +310,22 @@ input{
 
 }
 
-label{
+label {
     font-weight: 900;
 }
 
-form #msg{
+form #msg {
     height: 100px;
 }
 
-textarea{
+textarea {
     padding: 12px 20px;
     border-radius: 15px;
     border: 2px solid gray;
     resize: none;
 }
 
-button{
+button {
     height: 50px;
     width: 100px;
     border-radius: 15px;
@@ -323,12 +341,12 @@ button{
 
 }
 
-button:hover{
+button:hover {
     transform: scale(1.10);
-    
+
 }
 
-.contactMe{
+.contactMe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,17 +354,18 @@ button:hover{
     gap: 10px;
 }
 
-.contactMe .images{
+.contactMe .images {
     display: flex;
     gap: 20px;
 }
-.contactMe img{
+
+.contactMe img {
     height: 50px;
     width: 50px;
-    
+
 }
 
-.socialLogoText{
+.socialLogoText {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -368,69 +387,76 @@ button:hover{
         transition: 0.3s;
     }
 
-    .middleElements.active{
+    .singleBar {
+        display: none;
+    }
+
+    .middleElements.active {
         left: 0;
     }
-    .middleElements.active h2{
+
+    .middleElements.active h2 {
         border-right: None;
     }
 
-    .aboutMe{
+    .aboutMe {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .aboutMe img{
+
+    .aboutMe img {
         min-width: 200px;
         width: 350px;
     }
 
-    .hamburger{
+    .hamburger {
         display: block !important;
         padding-right: 20px;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+
+    .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
 
 @media (max-width: 499px) {
-    .aboutMe img{
+    .aboutMe img {
         flex-grow: 0;
         flex-shrink: 0;
         min-width: 150px;
-        width: 250px ;
+        width: 250px;
         min-height: 10px;
         height: 250px;
     }
 
-    .text{
+    .text {
         font-size: smaller;
     }
 
-    .contact{
+    .contact {
         gap: 10px;
     }
 
-    html{
+    html {
         scroll-snap-type: none;
     }
 }
 
-.hamburger{
+.hamburger {
     display: none;
     cursor: pointer;
 }
 
-.bar{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -443,11 +469,12 @@ button:hover{
 
 
 @media (max-width: 930px) {
-    .cardContainer{
+    .cardContainer {
         flex-direction: column;
     }
-    .projects{
+
+    .projects {
         gap: 2vh;
     }
-    
+
 }
