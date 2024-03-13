@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded',function(){
     const hardButton = document.getElementById("hard")
     const turutButton = document.getElementById("turut")
     const resetButton = document.getElementById("resetButton")
-    solveButton.addEventListener('click',solveSudokuDetailed);
+    const visualizeButton = document.getElementById("visualizeButton")
+    solveButton.addEventListener('click',solveSudoku);
+    visualizeButton.addEventListener('click',solveSudokuDetailed);
     resetButton.addEventListener('click',resetGrid);
     
     easyButton.addEventListener('click', () => fillSudoku(1));
